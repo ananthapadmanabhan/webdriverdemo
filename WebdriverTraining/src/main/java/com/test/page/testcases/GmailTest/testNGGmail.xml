@@ -1,0 +1,24 @@
+<suite name="AutomationFrameworks" parallel="methods" verbose="1">
+	<test name="TestcaseUnderFF" preserve-order="false">
+		<parameter name="Browser" value="*firefox"></parameter>
+		<classes>
+			<class name="com.test.page.testcases.GmailTest.gmailLoginTest">
+				<methods>
+					<include name="myGmailTest"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- <test name="TestcaseUnderIE" preserve-order="false">
+		<parameter name="Browser" value="*iexplore"></parameter>
+		<classes>
+			<class name="com.test.page.testcases.googleTest.googleSearchTest">
+				<methods>
+					<include name="myGoogleTest"/>
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+</suite>
+
